@@ -37,8 +37,7 @@ get '/:operation/:number1/:number2' do
   @number1 = params[:number1].to_i 
   @number2 = params[:number2].to_i 
   @operation = params[:operation]
-  #binding.pry 
-  #sum = @number1 + @number2 
+  
   if @operation == "add"
     sum = @number1 + @number2
     sum.to_s 
